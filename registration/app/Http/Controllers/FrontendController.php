@@ -39,7 +39,7 @@ class FrontendController extends Controller
 
            $data->save();
            Alert::success(' Thank you for your Request. Our Representative will contact you shortly. Staying with us. Call +8801613399191');
-           return redirect('welcome');
+           return redirect('registration')->with('success','thank you for registration');
       }
 
 }
